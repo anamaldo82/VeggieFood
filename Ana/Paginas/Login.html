@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/logo.css">  
+    <title>Login Form</title>
+</head>
+<header>
+    <!-- Navigation -->
+    <nav class="nav-main">
+      <!-- Brand -->
+      <ul class="nav-menu">
+        <li>
+          <a href="../Index.html">Home</a>
+        </li>  
+      </ul>
+</header>
+<body>
+    <div class="login-box">
+        <img src="../img/Logo.jpeg"  alt="logoVF" class="logo">
+        <h1>Login Here</h1>
+        <form action="https://formspree.io/f/mbjvqadp" method="POST">
+            <label for="text">Usuario</label>
+            <input type="text" placeholder="Nombre">
+            <label>Email:
+            <input type="email" name="email" placeholder="usuario@ejemplo">
+            </label>
+            <label for="password">Contraseña</label>
+            <input type="password" placeholder="Contraseña">
+<!-- your other form fields go here -->
+            <input type="submit" value="Login">
+            <a href="#">¿Olvidaste tu contraseña?</a><br><br>
+            <a href="#">¿No tienes cuenta?</a>
+        </form>
+    </div>
+    
+    <script>
+        const $form = document.querySelector('#form')
+        $form.addEventListener('submit', handleSubmit)
+
+        async function handleSubmit(event){
+            event.preventDefault()
+            const form = new FormData(this)
+            const response = await fetch(this.action, {
+            method: this.method,
+            body:form,
+            headers: {
+          'Accept': 'aplication/json'
+        }
+        })
+        if (response.ok) {
+        this.reset
+        alert('Gracias por tu registro')
+         }
+        }
+    </script>
+</body>
+</html>

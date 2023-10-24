@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34' height='44' viewBox='0 0 34 44'%3E%3Cg fill='%236a9b70' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M1 6.2C.72 5.55.38 4.94 0 4.36v13.28c.38-.58.72-1.2 1-1.84A12.04 12.04 0 0 0 7.2 22 12.04 12.04 0 0 0 1 28.2c-.28-.65-.62-1.26-1-1.84v13.28c.38-.58.72-1.2 1-1.84A12.04 12.04 0 0 0 7.2 44h21.6a12.05 12.05 0 0 0 5.2-4.36V26.36A12.05 12.05 0 0 0 28.8 22a12.05 12.05 0 0 0 5.2-4.36V4.36A12.05 12.05 0 0 0 28.8 0H7.2A12.04 12.04 0 0 0 1 6.2zM17.36 23H12a10 10 0 1 0 0 20h5.36a11.99 11.99 0 0 1 0-20zm1.28-2H24a10 10 0 1 0 0-20h-5.36a11.99 11.99 0 0 1 0 20zM12 1a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 14a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3.46-2a2 2 0 1 0-3.47 2 2 2 0 0 0 3.47-2zm0-4a2 2 0 1 0-3.47-2 2 2 0 0 0 3.47 2zM12 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3.46 2a2 2 0 1 0 3.47-2 2 2 0 0 0-3.47 2zm0 4a2 2 0 1 0 3.47 2 2 2 0 0 0-3.47-2zM24 43a10 10 0 1 0 0-20 10 10 0 0 0 0 20zm0-14a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3.46 2a2 2 0 1 0 3.47-2 2 2 0 0 0-3.47 2zm0 4a2 2 0 1 0 3.47 2 2 2 0 0 0-3.47-2zM24 37a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3.46-2a2 2 0 1 0-3.47 2 2 2 0 0 0 3.47-2zm0-4a2 2 0 1 0-3.47-2 2 2 0 0 0 3.47 2z'/%3E%3C/g%3E%3C/svg%3E");
+  font-family: "Oswald", sans-serif;
+  height: 100vh;
+  font-size: 16px;
+  font-weight: bold;
+ }
+.nav-main {
+  font-size: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 20px 0;
+}
+.nav-main ul {
+  display: flex;
+}
+.nav-main ul li {
+  padding: 10px;
+}
+
+.nav-main ul li a {
+  padding: 2px;
+  font-size: 20px;
+  margin-right: 50px;
+  color: #022e25;
+  text-decoration: none;
+}
+.nav-main ul li a:hover {
+  border-bottom: 2px solid rgb(2, 59, 22);
+}
+
+.nav-main ul.nav-menu {
+  flex: 1;
+  margin-left: 20px;
+}
+hr {
+  margin: 10px 0;
+}
+.login-box {
+  width: 520px;
+  height: 550px;
+  background-color: #ccefe3; 
+  color: #1e272e;
+  color: #022e25;
+  font-size: 16px;
+  top: 55%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 30px 30px;
+}
+
+.login-box .logo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: fixed;
+  left: calc(40% - 50px);
+  top: -100px;
+}
+
+.login-box h1 {
+  margin-top: 80px;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.login-box label {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  display: block;
+}
+
+.login-box input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.login-box input[type="text"], .login-box input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #022e25;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #022e25;
+  font-size: 18px;
+}
+
+.login-box input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #011a15;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.login-box input[type="submit"]:hover {
+  cursor: pointer;
+  background: #f35265;
+  color: #000;
+}
+
+.login-box a {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 20px;
+  color: #011a15;
+}
+
+.login-box a:hover {
+  color: rgb(33, 66, 138);
+}
+@media (max-width: 700px) {
+  .menu-btn {
+    display: block;
+  }
+  .login-box{
+    width:75%;
+    height: 75%;
+    background-color: #ccefe3; 
+    color: #1e272e;
+    color: #022e25;
+    font-size: 16px;
+    top: 60%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 30px 30px;
+  }
+  .login-box .logo{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    position: fixed;
+    left: calc(40% - 55px);
+    top: -100px;
+  }
+  .nav-main{
+    width:75%;
+    height: 75%;
+  }
+  }

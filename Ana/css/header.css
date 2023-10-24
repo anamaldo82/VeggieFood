@@ -1,0 +1,36 @@
+.container__header{
+    width: 50%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4%;
+}
+.logos{
+    display: flex;
+    max-width: 40%;
+}
+.titlelogo{
+    color: rgb(49, 135, 49);
+    width: 17.3%;
+}
+
+.imgLogo{
+    max-width: 22%;
+}
+
+.input{
+    width: 60%;
+    display: flex;
+    height: 40px;
+}
+.btnNav{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border: none;
+    background: var(--text-color2);
+    color: gray;
+    height: 100%;
+}
