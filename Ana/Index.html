@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
   <!-- CUSTOM CSS -->
   <link rel="stylesheet" href="styles.css">
+
 </head>
 
 <body>
@@ -23,11 +24,11 @@
     <!-- Navigation -->
     <nav class="nav-main">
       <!-- Brand -->
-      <img src="../Ana/img/Logo.jpeg" alt="Logo" class="nav-brand">      
+      <img src="../Ana/img/Home/Logo.jpeg" alt="Logo" class="nav-brand">      
       <!-- Left Nav -->
       <ul class="nav-menu">
         <li>
-          <a class="nav-link" href="../Ana/Conozcanos/index.html">Conozcanos</a>
+          <a class="nav-link" href="../Ana/Paginas/conozcanos.html">Conozcanos</a>
         </li>
         <li>
           <a href="#">Productos</a>
@@ -58,7 +59,7 @@
     <header class="banner">
       <h2>Mes Promocional!</h2>
       <p>Productos seleccionados con 30% de descuento.</p>
-      <a href="#" class="btn">
+      <a href="../Ana/Paginas/Login.html" class="btn">
         Acceder al descuento <i class="fas fa-chevron-right"></i>
       </a>
     </header>
@@ -68,22 +69,24 @@
     <div class="cards">
       
       <div>
-        <img src="../Ana/img/Fitness.jpeg" alt="" />
+        <img src="../Ana/img/Home/Fitness.jpeg" alt="" />
         <h3>Calendario de ejercicios.</h3>
         <p>Rutina de ejercicios de la semana.
         </p>
         <a href="#">Ir al calendario <i class="fas fa-angle-double-right"></i></a>
       </div>
       <div>
-        <img src="../Ana/img/Calabacines.jpeg" alt="" />
+        <!--conectar API-->
+        <img src="../Ana/img/Home/Calabacines.jpeg" alt="" />
         <h3>Receta del dia</h3>
         <p>Calabacines rellenos de garbanzos
         </p>
-        <a href="#">Ir a la receta <i class="fas fa-angle-double-right"></i></a>
+        <!--escuchador de eventos onclick-->
+        <a  onClick="" href="" clas="btn">Ir a la receta <i class="fas fa-angle-double-right"></i></a>
       </div>
       
       <div>
-        <img src="../Ana/img/Cena-con-espectaculo.jpeg" alt="" />
+        <img src="../Ana/img/Home/Cena-con-espectaculo.jpeg" alt="" />
         <h3>Eventos</h3>
         <p>Cena show con invitados especiales
         </p>
@@ -144,7 +147,7 @@
           </a>
         </li>
         <li>
-          <a href="#"> Agustin  Lescano </a>
+          <a href="#"> Agustin Lescano </a>
         </li>
         <li>
           <a href="#">Ana Maldonado</a>
@@ -156,7 +159,7 @@
           <a href="#">Chistian FM</a>
         </li>
         <li>
-          <a href="#">Sandra</a>
+          <a href="#">Sandra Mealla</a>
         </li>
       </ul>
     </div>
@@ -170,6 +173,7 @@
   <!-- Scroll Reveal -->
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="main.js"></script>
+  <script src="../Ana/JS/api.js"></script>
 </body>
 
 </html>
