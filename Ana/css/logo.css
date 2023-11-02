@@ -64,6 +64,19 @@ hr {
   top: -100px;
 }
 
+.logo {
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .login-box h1 {
   margin-top: 80px;
   padding: 0 0 20px;
